@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADDITIONSS OF NUMBERS</title>
+  </head>
+  <body>
+    <input type="number" id="a" />
+    <input type="number" id="b" />
+
+    <button onclick="calculate()">Additions</button>
+
+    <p id="result"></p>
+
+    <script>
+      function Additions(a, b) {
+        return a + b;
+      }
+
+      function calculate() {
+        const a = Number(document.getElementById("a").value);
+        const b = Number(document.getElementById("b").value);
+        document.getElementById("result").textContent = Additions(a, b);
+      }
+    </script>
+  </body>
+</html>

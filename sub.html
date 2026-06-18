@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUBTRACTION OF NUMBERS</title>
+  </head>
+  <body>
+    <input type="number" id="a" />
+    <input type="number" id="b" />
+
+    <button onclick="calculate()">subtract</button>
+
+    <p id="result"></p>
+
+    <script>
+      function subtract(a, b) {
+        return a - b;
+      }
+
+      function calculate() {
+        const a = Number(document.getElementById("a").value);
+        const b = Number(document.getElementById("b").value);
+        document.getElementById("result").textContent = subtract(a, b);
+      }
+    </script>
+  </body>
+</html>
